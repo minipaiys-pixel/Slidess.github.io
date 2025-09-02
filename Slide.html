@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Papel das Línguas Estrangeiras nos Esportes</title>
+
+    <!-- SECTION: CSS ESTILO -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .slide-container {
+            width: 100%;
+            max-width: 900px;
+            background: linear-gradient(135deg, #ffffff, #e2e8f0);
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .slide {
+            padding: 2.5rem;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        
+        .slide.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2.5rem;
+            border-top: 1px solid #cbd5e0;
+        }
+
+        .nav-btn {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .nav-btn:hover {
+            background-color: #3182ce;
+            transform: translateY(-2px);
+        }
+
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+
+        .nav-btn:disabled {
+            background-color: #a0aec0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- SECTION: HTML ESTRUTURA -->
+    <div class="slide-container">
+
+        <!-- Slide 1: Título -->
+        <div id="slide1" class="slide">
+            <div class="flex flex-col items-center justify-center text-center h-full">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-blue-500 mb-6 animate-pulse">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6a.75.75 0 00.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                </svg>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-600 mb-4 tracking-tight">
+                    O Papel das Línguas Estrangeiras nos Esportes
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-600 font-medium">A Comunicação Universal entre Culturas</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Comunicação Estratégica -->
+        <div id="slide2" class="slide hidden">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">1. Comunicação Estratégica</h2>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Instruções de Treinadores:</strong> A capacidade de um técnico dar instruções em diferentes idiomas pode ser crucial para o desempenho de uma equipe.
+                    </p>
+                </li>
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 010 1.06l-3.25 3.25a2.25 2.25 0 003.065 3.065l3.25-3.25a.75.75 0 111.06 1.06l-3.25 3.25a3.75 3.75 0 01-5.304-5.304l3.25-3.25a.75.75 0 011.06 0zm-2.16 10.44a.75.75 0 010-1.06l3.25-3.25a2.25 2.25 0 00-3.065-3.065l-3.25 3.25a.75.75 0 11-1.06-1.06l3.25-3.25a3.75 3.75 0 015.304 5.304l-3.25 3.25a.75.75 0 01-1.06 0z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Estratégia em Campo:</strong> Conversas rápidas entre atletas, combinando jogadas e táticas, são muito mais eficazes quando todos se entendem.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slide 3: Entendimento e Conexão -->
+        <div id="slide3" class="slide hidden">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">2. Entendimento e Conexão</h2>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path d="M11.47 3.841a.75.75 0 011.06 0l8.69 8.69a.75.75 0 11-1.06 1.061l-8.23-8.23-8.23 8.23a.75.75 0 11-1.06-1.06l8.69-8.69z" />
+                        <path d="M12 5.25a.75.75 0 01.75.75v12.5a.75.75 0 01-1.5 0V6a.75.75 0 01.75-.75z" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Vestiário e Espírito de Equipe:</strong> Falar a língua do colega de time ajuda a criar laços mais fortes e um ambiente de confiança.
+                    </p>
+                </li>
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.5 7.5a3 3 0 00-3-3h-8.25V4.5a.75.75 0 011.5 0v.75h3.485c1.192 0 2.306.332 3.28 1.018a3.186 3.186 0 011.542 2.768v8.25a.75.75 0 01-1.5 0v-8.25z" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Entrevistas e Imprensa:</strong> Atletas que se comunicam bem conseguem se conectar diretamente com fãs e jornalistas do mundo todo.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slide 4: Vantagem Competitiva -->
+        <div id="slide4" class="slide hidden">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">3. Vantagem Competitiva</h2>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path d="M12 1.5a.75.75 0 01.75.75V4.75a.75.75 0 01-1.5 0V2.25a.75.75 0 01.75-.75zM12 19.5a.75.75 0 01.75.75V22a.75.75 0 01-1.5 0v-1.75a.75.75 0 01.75-.75zM4.75 12.75a.75.75 0 01-.75-.75H2.25a.75.75 0 010-1.5H4a.75.75 0 01.75.75zM19.25 12.75a.75.75 0 01-.75-.75H17a.75.75 0 010-1.5h1.75a.75.75 0 01.75.75zM17.36 5.86a.75.75 0 01-.53-.22L15.03 3.6a.75.75 0 011.06-1.06l1.83 1.83a.75.75 0 01-.53 1.29zM3.6 15.03a.75.75 0 01-1.06-1.06l1.83-1.83a.75.75 0 011.06 1.06l-1.83 1.83z" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Recrutamento:</strong> A fluência de um jogador em línguas diferentes pode ser um fator decisivo na hora da contratação.
+                    </p>
+                </li>
+                <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-500 mr-4 mt-1">
+                        <path d="M15.97 4.25a.75.75 0 010-1.5h-7.97a.75.75 0 010 1.5h.75v14.5a.75.75 0 01-1.5 0V17.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01-.75-.75V8.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75V9h2.25a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75h-2.25v2.25a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-1.5a.75.75 0 01-.75-.75V8.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.75h.75v-1.5a.75.75 0 01.75-.75h7.97a.75.75 0 010 1.5h-.75v14.5a.75.75 0 01-1.5 0V17.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01-.75-.75V8.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75V9h2.25a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75h-2.25v2.25a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-1.5a.75.75 0 01-.75-.75V8.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.75h.75z" />
+                    </svg>
+                    <p class="flex-1">
+                        <strong class="font-semibold text-gray-800">Negociações e Contratos:</strong> Negociar parcerias e contratos internacionais é mais fácil e transparente quando as partes se entendem.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slide 5: Conclusão -->
+        <div id="slide5" class="slide hidden">
+            <div class="flex flex-col items-center justify-center text-center h-full">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-blue-500 mb-6 animate-pulse">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6a.75.75 0 00.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                </svg>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-600 mb-6 tracking-tight">
+                    O Esporte como uma Linguagem Universal
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                    Embora o esporte tenha suas próprias "regras universais", o domínio de línguas estrangeiras fortalece o espírito de equipe e abre portas para oportunidades globais, provando que o sucesso dentro e fora de campo está diretamente ligado à capacidade de se comunicar.
+                </p>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="slide-footer">
+            <button id="prevBtn" class="nav-btn" disabled>Anterior</button>
+            <span id="slideIndicator" class="text-gray-500 font-medium text-sm">Slide 1 de 5</span>
+            <button id="nextBtn" class="nav-btn">Próximo</button>
+        </div>
+    </div>
+
+    <!-- SECTION: JAVASCRIPT LÓGICA -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideIndicator = document.getElementById('slideIndicator');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.remove('hidden');
+                        setTimeout(() => slide.classList.add('active'), 10);
+                    } else {
+                        slide.classList.remove('active');
+                        slide.classList.add('hidden');
+                    }
+                });
+                updateButtons(index);
+                updateIndicator(index);
+            }
+
+            function updateButtons(index) {
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+            }
+
+            function updateIndicator(index) {
+                slideIndicator.textContent = `Slide ${index + 1} de ${slides.length}`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Configuração inicial
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
